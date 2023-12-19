@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  color: #000000;
+  margin: 10px 10px;
+}
+
+.tmdb-link {
+  text-decoration: none;
+  color: #070707;
+  font-size: 24px; /* Increase font size for better visibility */
+  font-weight: bold;
+  transition: color 0.3s; /* Add a transition for hover effect */
+}
+
+.tmdb-link:hover {
+  color: #0e4389; /* Change color on hover */
+}
+
+.search-input {
+  width: 90%;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #ff6347; /* Change border color on focus */
+}
+
+.search-page {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+
+.search-result img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.search-result .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.search-result .description {
+  font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.search-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-categories {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.movie-categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-categories li {
+  padding: 8px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+  scrollbar-width: auto;
+}
+
+.movie-categories li:hover {
+  background-color: #dcdcdc; /* Change the background color on hover */
+}
+
+.load-more-button {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-categories li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-input {
+    width: 100%;
+  }
+
+  .movie-categories li {
+    width: auto;
+  }
+}
